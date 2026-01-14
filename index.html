@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>14点吃牌游戏</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div id="game-container">
+    <!-- 计分区 -->
+    <div id="score-area">
+      <h3>🏆 胡牌记录</h3>
+      <div id="win-sets"></div>
+    </div>
+
+    <!-- 弃牌堆 -->
+    <div id="discard-pile">
+      <div class="card-back">弃牌堆</div>
+    </div>
+
+    <!-- 对手区域（上、左、右） -->
+    <div id="opponents">
+      <div id="player-1" class="opponent"></div> <!-- 上家 -->
+      <div id="player-2" class="opponent"></div> <!-- 左家 -->
+      <div id="player-3" class="opponent"></div> <!-- 右家 -->
+    </div>
+
+    <!-- 玩家手牌 -->
+    <div id="player-hand"></div>
+
+    <!-- 操作按钮 -->
+    <div id="action-buttons">
+      <button id="btn-eat" disabled>吃</button>
+      <button id="btn-pass-eat" disabled>不吃</button>
+      <button id="btn-play" disabled>出牌</button>
+    </div>
+
+    <!-- 游戏提示 -->
+    <div id="game-message"></div>
+  </div>
+
+  <script type="module" src="js/main.js">
